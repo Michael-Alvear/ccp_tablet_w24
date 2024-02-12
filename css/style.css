@@ -1,5 +1,5 @@
 @media (prefers-reduced-motion: reduce) {
-    main,figure,pic,video, .animation {
+    main,figure,pic,video, .animation, gif {
       animation: none;
     }
     
