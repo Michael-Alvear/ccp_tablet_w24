@@ -10,8 +10,16 @@ body{
 }
 main{
     background-color: white;
-    color: #323232
+    color: #323232;
+    overflow: wrap;
 }
+
+main p, main ul, main ol, main ol li{
+    width:100%;
+    overflow: wrap;
+}
+
+
 nav{
     background-color: white;
 }
@@ -128,6 +136,18 @@ figure{
 }
 
 @media screen and (min-width:900px){
+    .picbio{
+        display:block;
+        max-width: 900px;
+    }
+    .food-gallery,.loc-gallery{
+        display: block;
+    }
+    
+    p,div{
+        max-width: 800px;
+    }
+
     main{
         border: 2px solid black;
         margin: auto;
