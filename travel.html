@@ -23,25 +23,39 @@
     </header>
 
     <main id ="main">
+
+        <button id="night-mode-toggle">Toggle Night Mode</button>
+            <script>
+                const nightModeButton = document.getElementById('night-mode-toggle');
+                const body = document.body;
+
+                nightModeButton.addEventListener('click', () => {
+                    body.classList.toggle('night-mode');
+                });
+            </script>
+
+            
         <h1>Travel</h1>
 
         <div id="niagra_falls">
             <h2>Niagra Falls</h2>
             <p><strong>Geological Location:</strong> North America</p>
             
-            <img src="images/Niagara_Falls_gif.gif" width ="200" alt = "Niagra Falls with violently moving water fall.">
-
-            <img src="images/Niagara_Falls_2.jpg" width ="200" alt = "Bird's eye view of Niagra Falls.">
-
-            <p>Niagara Falls is located on the border between Canada and the United States. Connecting Lake Erie and Lake Ontario, Niagara Falls has the highest flow rate of any waterfall in North America.</p> 
-
-            <p>
-                Niagara Falls draws in thousands of visitors every year, and for good reason. As such, there are numerous things that you can see while you visit the falls, and it is very easy to make a full trip out of seeing this wonderful sight.
-            </p>
+            <div class="picbio">
+                <div class="loc-gallery">
+                    <img src="images/Niagara_Falls_gif.gif" width ="200" alt = "Niagra Falls with violently moving water fall.">
+                    <img src="images/Niagara_Falls_2.jpg" width ="200" alt = "Bird's eye view of Niagra Falls.">
+                </div>
+                
+                <div>
+                    <p>Niagara Falls is located on the border between Canada and the United States. Connecting Lake Erie and Lake Ontario, Niagara Falls has the highest flow rate of any waterfall in North America.</p> 
+                    <p>Niagara Falls draws in thousands of visitors every year, and for good reason. As such, there are numerous things that you can see while you visit the falls, and it is very easy to make a full trip out of seeing this wonderful sight.</p>
+                </div>
+            </div>
 
 
             <h3>Photo Gallery</h3>
-<div class="picture-gallery">
+            <div class="picture-gallery">
     
                 
                 <figure>
@@ -73,18 +87,18 @@
             <h2>Boulder Colorado</h2>
             <p><strong>Geological Location:</strong> Asia, Africa, North America, South America, Antarctica, Europe, Australia, North America</p>
             
-            <img src="images/Boulder_Colorado.gif" width ="200" alt = "Different Perspectives of the mountains from high in the sky">
+            <div class="picbio">
 
-            <img src="images/Boulder_Colorado_Still_Image.jpg" width ="200" alt = "Boulder City is shown with the giants mountains in the background">
-
-            <p>
-                Boulder, Colorado is where the Buffalo Roam. It is home to my Alma Mater, the University of Colorado! There are many hiking locations near the city center, most notably Chautauqua Park.
-            </p> 
-
-            <p>
-                Boulder, Colorado is a small city of about 104,000 people, about a quarter of which are students that attend the University of Colorado. They city is a vibrant start-up hub that is a center for technology and innovation much like Ann Arbor is.  
-            </p>
-
+                <div class="loc-gallery">
+                    <img src="images/Boulder_Colorado.gif" width ="200" alt = "Different Perspectives of the mountains from high in the sky">
+                    <img src="images/Boulder_Colorado_Still_Image.jpg" width ="200" alt = "Boulder City is shown with the giants mountains in the background">
+                </div>
+                
+                <div>
+                    <p>Boulder, Colorado is where the Buffalo Roam. It is home to my Alma Mater, the University of Colorado! There are many hiking locations near the city center, most notably Chautauqua Park.</p> 
+                    <p>Boulder, Colorado is a small city of about 104,000 people, about a quarter of which are students that attend the University of Colorado. They city is a vibrant start-up hub that is a center for technology and innovation much like Ann Arbor is.</p>                
+                </div>
+            </div>
 
             <h3>Photo Gallery</h3>
 <div class="picture-gallery">
@@ -118,19 +132,18 @@
                 <h2>Vermont</h2>
                 <p><strong>Geological Location:</strong> North America</p>
 
-               
-                <img src="images/vermont_primary_gif.gif" width ="200" alt = "Vermont road in the fall with bright vibrant red and orange leaf trees with a car driving on the road">
-    
-                <img src="images/vermont_primary_nongif.jpg" width ="200" alt = "Arial view of a Vermon Forest in the Fall">
-    
-                <p>
-                    Vermont, located in the northeastern United States, is a state renowned for its natural beauty and charm. It is known for its breathtaking mountain ranges, serene lakes, dense forests, and captivating rural landscapes. The Green Mountain National Forest covers much of the state, offering abundant outdoor activities and adventure opportunities. In winter, skiers flock here to enjoy snow-covered slopes, while summer beckons hikers, cyclists, and campers to explore its pristine wilderness. Furthermore, Vermont boasts picturesque small towns with a countryside vibe and a unique farming landscape, making it a destination where rural charm thrives. Whether you're seeking the beauty of nature or embracing a tranquil way of life, Vermont is a place worth visiting.
-                </p> 
-    
-                <p>
-                    Vermont is celebrated not only for its natural beauty but also for its distinctive culture and historical heritage. The state, as the 14th to join the United States, is considered one of the birthplaces of the American Revolution, and as a result, it is rich in historical landmarks and monuments. Additionally, Vermont takes pride in its emphasis on environmentalism and sustainable living, with communities often encouraging organic farming, farmers' markets, and craftsmanship. Furthermore, the state is well-known for its vibrant arts and music culture, offering a plethora of cultural experiences with various music festivals, art galleries, and performing arts venues. In essence, Vermont is a place where the blend of natural splendor, historical legacy, and cultural vibrancy attracts people of diverse interests and backgrounds to explore its wonders. 
-                </p>
-    
+                <div class="picbio">
+
+                    <div class="loc-gallery">
+                        <img src="images/vermont_primary_gif.gif" width ="200" alt = "Vermont road in the fall with bright vibrant red and orange leaf trees with a car driving on the road">
+                        <img src="images/vermont_primary_nongif.jpg" width ="200" alt = "Arial view of a Vermon Forest in the Fall">
+                    </div>
+                    
+                    <div>
+                        <p>Vermont, located in the northeastern United States, is a state renowned for its natural beauty and charm. It is known for its breathtaking mountain ranges, serene lakes, dense forests, and captivating rural landscapes. The Green Mountain National Forest covers much of the state, offering abundant outdoor activities and adventure opportunities. In winter, skiers flock here to enjoy snow-covered slopes, while summer beckons hikers, cyclists, and campers to explore its pristine wilderness. Furthermore, Vermont boasts picturesque small towns with a countryside vibe and a unique farming landscape, making it a destination where rural charm thrives. Whether you're seeking the beauty of nature or embracing a tranquil way of life, Vermont is a place worth visiting.</p>                         
+                        <p>Vermont is celebrated not only for its natural beauty but also for its distinctive culture and historical heritage. The state, as the 14th to join the United States, is considered one of the birthplaces of the American Revolution, and as a result, it is rich in historical landmarks and monuments. Additionally, Vermont takes pride in its emphasis on environmentalism and sustainable living, with communities often encouraging organic farming, farmers' markets, and craftsmanship. Furthermore, the state is well-known for its vibrant arts and music culture, offering a plethora of cultural experiences with various music festivals, art galleries, and performing arts venues. In essence, Vermont is a place where the blend of natural splendor, historical legacy, and cultural vibrancy attracts people of diverse interests and backgrounds to explore its wonders. </p>
+                    </div>
+                </div>
     
             <h3>Photo Gallery</h3>
             <div class="picture-gallery">
