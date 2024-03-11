@@ -1,5 +1,5 @@
 @media (prefers-reduced-motion: reduce) {
-    main,figure,pic,video, .animation, gif {
+    main,figure,pic,video, .animation,gif {
       animation: none;
     }
     
@@ -56,6 +56,7 @@ li a:visited{
 
 .active{
     background-color: rgb(246, 212, 218);
+    
 }
 
 .active a{
@@ -98,6 +99,33 @@ figure{
     
 }
 
+.night-mode {
+    background-color: rgb(56, 55, 55); /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+@media screen and (min-width:764px){
+    .picbio{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .picture-gallery{
+        justify-items: center;
+        align-items: center;
+    }
+    .food-gallery,.loc-gallery{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .loc-gallery{
+        flex-direction:column;
+    }
+    
+}
 
 @media screen and (min-width:900px){
     main{
