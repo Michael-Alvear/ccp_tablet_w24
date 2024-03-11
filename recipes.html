@@ -22,6 +22,18 @@
     </header>
 
     <main id="main">
+        <div class = "content">
+            
+            <button id="night-mode-toggle">Toggle Night Mode</button>
+            <script>
+                const nightModeButton = document.getElementById('night-mode-toggle');
+                const body = document.body;
+
+                nightModeButton.addEventListener('click', () => {
+                    body.classList.toggle('night-mode');
+                });
+            </script>
+        
         <h1>Recipes</h1>
 
         <div id ="chocolate_cookies">
@@ -29,9 +41,12 @@
             <p><strong>Origin:</strong> Michigan</p>
             <p><strong>Source:</strong> Family Recipe</p>
             <p><strong>Category:</strong> Dessert</p>
-            <img src="images/double_chocolate_cookies.png" width = "400" alt="Stack of Double Chocolate Cookies ">
+            
+            <div class="picbio">
+                <img src="images/double_chocolate_cookies.png" width = "400" alt="Stack of Double Chocolate Cookies ">
 
-            <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p> 
+                <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p> 
+            </div>
 
             <p><strong>Recipe Ingrediants:</strong></p>
             <ul>
@@ -62,10 +77,11 @@
 
 
             <h3>Food Gallery</h3>
-            <img src="images/double_chocolate_chips.png" width ="200" alt = "A small pile of chocolate chips">
-            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545"  width ="200" alt="Chocolate melting in a boiler">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG"  width ="200" alt="Brown sugar in three different shades of darkness">
-
+            <div class="food-gallery">
+                <img src="images/double_chocolate_chips.png" width ="200" alt = "A small pile of chocolate chips">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545"  width ="200" alt="Chocolate melting in a boiler">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG"  width ="200" alt="Brown sugar in three different shades of darkness">
+            </div>
             
             <p>Colleen van Lent</p>
         </div>
@@ -75,10 +91,13 @@
             <p><strong>Origin:</strong> American </p>
             <p><strong>Source:</strong> <a href="https://www.delish.com/cooking/recipe-ideas/a43369646/chocolate-chip-banana-bread-recipe/"> Delish's Chocolate Chip Banana Bread</a> </p>
             <p><strong>Category:</strong> Dessert</p>
-            <img src="images/chocolate_chip_banana_bread.jpg" width = "400" alt="Chocolate Chip Banana Bread fully cooked and placed in plastic container">
-
-            <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect chocolate chip banana bread! Not only does it help utilize the bananas that have slowly overripened at the back of the fridge, it ends up creating an incredibly delicious, and relatively healthy, dessert. </p> 
-
+            
+            <div class="picbio">
+                <img src="images/chocolate_chip_banana_bread.jpg" width = "400" alt="Chocolate Chip Banana Bread fully cooked and placed in plastic container">
+                
+                <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect chocolate chip banana bread! Not only does it help utilize the bananas that have slowly overripened at the back of the fridge, it ends up creating an incredibly delicious, and relatively healthy, dessert. </p> 
+            </div>
+            
             <p><strong>Recipe Ingrediants:</strong></p>
             <ul>
                 <li>Cooking spray</li>
@@ -104,9 +123,11 @@
                 <li>Bake bread until a tester inserted into the center comes out clean, about 1 hour. Let cool 10 minutes in pan, then invert onto a wire rack and let cool completely.</li>
             </ol>
             <h3>Food Gallery</h3>
-            <img src="https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg" width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
-            <img src="https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg"  width ="200" alt="Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
-            <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg"  width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
+            <div class="food-gallery">
+                <img src="https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg" width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
+                <img src="https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg"  width ="200" alt="Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
+                <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg"  width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
+            </div>
             <p>Ibrahim Moazzam & Memuna Tariq</p>
         </div>
 
@@ -116,10 +137,12 @@
             <p><strong>Origin:</strong> Sweden </p>
             <p><strong>Source:</strong> <a href="https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/"> Kristi, true-north-kitchen.com </a> </p>
             <p><strong>Category:</strong> Breakfast</p>
-            <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
 
-            <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect Swedish Pancakes! It's an incredible dish to have for breakfast! </p> 
-
+            <div class="picbio">
+                <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
+                <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect Swedish Pancakes! It's an incredible dish to have for breakfast! </p> 
+            </div>
+                
             <p><strong>Recipe Ingrediants:</strong></p>
             <ul>
                 <li>Butter</li>
@@ -141,10 +164,10 @@
 
 
             <h3>Food Gallery</h3>
-            <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
-
-            <img src="https://true-north-kitchen.com/wp-content/uploads/2020/12/swedish-pancakes-9.jpg"  width ="200" alt="A thin layer of pancake batter cooking in a stainless steel pan.">
-
+            <div class="food-gallery">
+                <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
+                <img src="https://true-north-kitchen.com/wp-content/uploads/2020/12/swedish-pancakes-9.jpg"  width ="200" alt="A thin layer of pancake batter cooking in a stainless steel pan.">
+            </div>                        
             
             <p>Alyssa Sklar</p>
         </div>
